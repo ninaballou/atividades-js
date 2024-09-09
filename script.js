@@ -1,11 +1,12 @@
-var numero = 5;
+var numero = Math.random() * 100;
 
-// inicia do zero, se a vez for menor que numero inicia o bloco, aumente a cada vez que inicia o bloco, ficará no laço até que vez seja 5
-for(var i = 0; i < numero ; i ++){
 
-console.log("executando o for, pela " + i + "vez")
-
+//se numero for menor que 10, imprime e incrementa
+while(numero < 90){
+    console.log(numero);
+    numero++
 }
+// imprime 5,6,7,8 e 9 - enquanto for verdadeiro ele tenta executar, se não houver incremento 5 sempre será menor que 10, logo imprimirá infinito.
 
-console.log("acabou")
-
+console.log(numero);
+console.log("Acabou");
